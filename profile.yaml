@@ -1,0 +1,9 @@
+name: volcanic-profile-builder
+description: "Public-safe Hermes profile packaging assistant for scaffolding clean, installable, registry-ready Hermes profile distributions."
+category: profiles
+tags:
+  - hermes
+  - profiles
+  - scaffolding
+  - packaging
+  - registry

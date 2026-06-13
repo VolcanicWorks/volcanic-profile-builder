@@ -1,0 +1,20 @@
+name: volcanic-profile-builder
+version: 1.0.0
+description: "Public-safe Hermes profile packaging assistant for scaffolding clean, installable, registry-ready Hermes profile distributions."
+author: "Volcanic"
+license: MIT
+hermes_requires: ">=0.15.0"
+env_requires: []
+distribution_owned:
+  - README.md
+  - SOUL.md
+  - config.yaml
+  - distribution.yaml
+  - profile.yaml
+  - .env.EXAMPLE
+  - .gitignore
+  - LICENSE
+  - cron/README.md
+  - scripts/profile_secret_scan.py
+  - skills/profile-scaffolding/SKILL.md
+  - skills/profile-registry-readiness/SKILL.md

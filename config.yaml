@@ -1,0 +1,12 @@
+model:
+  provider: openrouter
+  default: anthropic/claude-sonnet-4
+agent:
+  max_turns: 60
+tools:
+  enabled_toolsets:
+    - web
+    - terminal
+    - file
+    - code_execution
+    - skills
