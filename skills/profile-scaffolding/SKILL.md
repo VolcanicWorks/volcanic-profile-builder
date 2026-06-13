@@ -22,6 +22,7 @@ Use when turning an agent idea into a public or shareable Hermes profile distrib
    - `SOUL.md`
    - `config.yaml`
    - `distribution.yaml`
+   - `profile.yaml`
    - `.env.EXAMPLE`
    - `cron/README.md`
    - optional `skills/`, `scripts/`, `templates/`

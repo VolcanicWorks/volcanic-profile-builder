@@ -18,3 +18,4 @@ distribution_owned:
   - scripts/profile_secret_scan.py
   - skills/profile-scaffolding/SKILL.md
   - skills/profile-registry-readiness/SKILL.md
+  - templates/registry_readiness_report.md

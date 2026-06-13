@@ -14,11 +14,21 @@ hermes profile install github.com/Freakazoid78tr/volcanic-profile-builder --name
 hermes -p volcanic-profile-builder chat
 ```
 
+## Update
+
+```bash
+hermes profile update volcanic-profile-builder
+```
+
 One-shot example:
 
 ```bash
-hermes -p volcanic-profile-builder chat -q "Help with the task this profile is designed for."
+hermes -p volcanic-profile-builder chat -q "Scaffold a clean public Hermes profile for a git commit-message assistant."
 ```
+
+## Relationship to volcanic-profile-auditor
+
+Use `volcanic-profile-builder` to **create/package** new Hermes profiles. Use `volcanic-profile-auditor` to **inspect/audit** profiles before installing or submitting them.
 
 ## Example tasks
 
@@ -36,6 +46,12 @@ This profile requests web access for public registry/docs research, terminal/fil
 Do not include private memories, session logs, API keys, auth files, internal business strategy, wallet data, or unreleased proprietary workflows in public profile packages.
 
 
+## Requirements
+
+- Hermes Agent >= 0.15.0.
+- Python 3 for the optional local secret/private-state scanner.
+- If you do not have access to the default model in `config.yaml`, override with `--model` or edit the profile config after install.
+
 ## What is included
 
 - `SOUL.md` — profile persona and operating principles.
@@ -44,6 +60,7 @@ Do not include private memories, session logs, API keys, auth files, internal bu
 - `profile.yaml` — short registry-facing profile metadata.
 - `.env.EXAMPLE` — empty placeholder file; no secrets.
 - `skills/` — bundled reusable workflows for this profile.
+- `templates/registry_readiness_report.md` — reusable readiness report template.
 - `scripts/profile_secret_scan.py` — local scanner for common secrets/private state.
 - `cron/README.md` — explicit note that no cron jobs are enabled by default.
 
