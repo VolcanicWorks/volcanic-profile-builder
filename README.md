@@ -5,7 +5,7 @@ Public-safe Hermes profile packaging assistant for scaffolding clean, installabl
 ## Install
 
 ```bash
-hermes profile install github.com/Freakazoid78tr/volcanic-profile-builder --name volcanic-profile-builder
+hermes profile install github.com/VolcanicWorks/volcanic-profile-builder --name volcanic-profile-builder
 ```
 
 ## Run
@@ -68,14 +68,14 @@ Do not include private memories, session logs, API keys, auth files, internal bu
 
 ```bash
 python3 scripts/profile_secret_scan.py .
-hermes profile install github.com/Freakazoid78tr/volcanic-profile-builder --name volcanic-profile-builder-smoke -y
+hermes profile install github.com/VolcanicWorks/volcanic-profile-builder --name volcanic-profile-builder-smoke -y
 hermes profile show volcanic-profile-builder-smoke
 hermes profile delete volcanic-profile-builder-smoke -y
 ```
 
 ## Branding/provenance
 
-Published under the `Freakazoid78tr` GitHub account with `Volcanic` as the profile author/brand. This is a public-service profile, not a private Volcanic operating profile.
+Published under the `VolcanicWorks` GitHub account with `Volcanic` as the profile author/brand. This is a public-service profile, not a private Volcanic operating profile.
 
 ## License
 
